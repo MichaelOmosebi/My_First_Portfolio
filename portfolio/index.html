@@ -1,0 +1,88 @@
+<!-- HTML File:
+
+Create an HTML file within the portfolio directory and name your HTML file index.html.
+Page Structure and Semantic HTML:
+
+The document must start with the <!DOCTYPE html> declaration.
+Use <html lang="en"> to define the document language.
+The <head> section must contain <meta charset="utf-8"> and a <title> element with your full name followed by - Personal Portfolio (e.g., John Doe - Personal Portfolio).
+The body of the document must include the following semantic HTML5 elements in order: <header>, <nav>, <section>, <article>, and <footer>.
+Header:
+
+The <header> must contain an <h1> element with your name.
+Include a <p> tag beneath the <h1> with a brief tagline or professional statement.
+Navigation Bar (<nav>):
+
+Include a list of links (<ul> containing <li> elements) that allows navigation to the different sections of the webpage: Introduction, Projects, About Me, and Contact.
+Each list item must contain an <a> tag with the href attribute pointing to the corresponding section ID (e.g., href="#projects" for the Projects section).
+Content Sections:
+
+Introduction Section (<section id="introduction">): Include an <h2> heading titled “Introduction” and a paragraph <p> describing yourself.
+Projects Section (<section id="projects">): Use an <h2> heading titled “Projects”. Each project must be wrapped in <article> tags with a class of “project”. Each <article> must contain an <h3> for the project title, a <p> for the description, and an <a> tag linking to the project with target="_blank".
+About Me Section (<section id="about">): Include an <h2> heading titled “About Me” and paragraphs or lists describing your background, skills, or hobbies.
+Contact Section (<section id="contact">): Use an <h2> heading titled “Contact” and provide an email link using <a href="mailto:your.email@example.com"> and links to your LinkedIn and GitHub profiles, ensuring these links open in a new tab using target="_blank".
+Footer:
+
+The <footer> must contain a <p> element with copyright information (e.g., &copy; 2024 Your Name). -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Micheal Omosebi - Personal Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Micheal Omosebi</h1>
+        <p>Welcome to my personal portfolio!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Micheal, a passionate web developer with a knack for creating dynamic and user-friendly websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <article class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <a href="https://project1.com" target="_blank">View Project</a>
+        </article>
+        <article class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="https://project2.com" target="_blank">View Project</a>
+        </article>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a self-taught developer with a background in Data Science. I love analytical thinking through data and creating meaningful insights.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email: <a href="mailto:micheal.omosebi@live.com">micheal.omosebi@live.com</a></p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/michaelomosebi/" target="_blank">LinkedIn</a> and <a href="https://github.com/michaelomosebi" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Micheal Omosebi</p>
+    </footer>
+
+</body>
+
+</html>
