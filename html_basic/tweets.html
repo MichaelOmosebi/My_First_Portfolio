@@ -1,3 +1,14 @@
+<!-- However, in order to start getting consistency throughout the website, all of the HTML files (index.html and tweets.html) must now have the same structure:
+
+The <body> tag of all of your webpages must contain exactly three direct sub-tags in that order: <header>, <main> and <footer>
+The <header> tag must contain an unordered list (the <ul> and <li> tags) of links (the <a> tag) to each of your webpages. As you may have understood, this will serve as a navigation for your website.
+The <footer> tag must contain one paragraph with the sentence Made by <YOUR NAME> - <a href="<ANY LINK>" target="_blank">here</a>. The paragraph must be on a single line in your code (no line breaks), or the checker may fail.
+The <main> tag must contain two direct sub-tags in that order: <article> and <aside>:
+<article> contains the content of your webpage: texts, links, images, tweets, … This is the part of index.html and tweets.html that you have already written.
+<aside> contains a single paragraph, just reading for now “placeholder to add comment thread later”. -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,13 +18,31 @@
     <title>My First Page</title>
 
 <body>
-    <h1>Welcome to My First Page</h1>
-    <p>This is a simple HTML document structure.</p>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tweets.html">Tweets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Welcome to My First Page</h1>
+            <p>This is a simple HTML document structure.</p>
+            <aside>
+            <p>placeholder to add comment thread later</p>
+            </aside>
 
     <h2>My Tweets</h2>
     <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I know you are resting in peace, Charlie. <br><br>Still can’t believe this happened. <br><br>Your memory lives strong. <a href="https://t.co/zxVnUVNb1Q">https://t.co/zxVnUVNb1Q</a></p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1969268469242777670?ref_src=twsrc%5Etfw">September 20, 2025</a></blockquote> 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-    <a href="index.html">Back to Home</a>
+    <footer>
+        <p>Made by Micheal - <a href="https://www.linkedin.com/in/michaelomosebi/" target="_blank">here</a></p>
+    </footer>
+        
 </body>
 </html>
